@@ -13,4 +13,6 @@ public interface UserService {
     User getUser(String username);
     Role getRole(ERole role);
     List<User> getUsers();
+
+    List<Role> getRoles();
 }

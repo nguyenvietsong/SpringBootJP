@@ -24,7 +24,12 @@ public class SpringBootSecurityJwtApplication {
 	@Bean
 	CommandLineRunner run(UserService userService){
 		return args -> {
-
+			List<Role> lst = userService.getRoles();
+			if(lst.size() == 0){
+				userService.saveRole(new Role(ERole.ROLE_ADMIN));
+				userService.saveRole(new Role(ERole.ROLE_USER));
+				userService.saveRole(new Role(ERole.ROLE_MODERATOR));
+			}
 
 		};
 	}
