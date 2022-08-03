@@ -9,5 +9,5 @@ import java.util.List;
 import java.util.Optional;
 
 public interface DethiRepository extends JpaRepository<Dethi,Long> {
-     Optional<Dethi> findById(Long id);
+     Optional<Dethi> findById(int id);
 }

@@ -20,6 +20,8 @@ public class Dethi {
 
     private int thoigianthi;
 
+    private String trangthai;
+
     @ManyToOne
     private TrinhDo trinhdo;
 
