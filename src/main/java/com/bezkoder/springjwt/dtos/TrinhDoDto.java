@@ -7,10 +7,7 @@ import lombok.Setter;
 @Data
 @Setter
 @Getter
-public class DethiDto {
+public class TrinhDoDto  {
     private Long id;
-    private String tendethi;
-    private int thoigianthi;
-    private String trangthai;
-    private TrinhDoDto trinhdo;
+    private String name;
 }
